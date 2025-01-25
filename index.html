@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dox attempt #1</title>
+    <style>
+        body {
+            background-color: #0b0b0b;
+            color: #d1d1d1;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #1b1b1b;
+            border: 2px solid #444;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+            border-radius: 15px;
+            position: relative;
+            z-index: 1;
+            animation: flicker 1s infinite alternate;
+        }
+
+        h1, h2 {
+            color: #ff6666;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 0 0 10px #ff0000, 0 0 25px #ff0000, 0 0 40px #ff0000;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        h1 {
+            font-size: 4em;
+        }
+
+        a {
+            color: #00cccc;
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00;
+        }
+
+        a:hover {
+            color: #ff00ff;
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #333;
+            position: relative;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        .highlight {
+            color: #00ff00;
+            font-weight: bold;
+        }
+
+        .dark-web-effect {
+            text-shadow: 0 0 10px #00ff00, 0 0 30px #00ff00, 0 0 50px #00ff00;
+        }
+
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: -1;
+            border-radius: 15px;
+        }
+
+        .line {
+            border-top: 1px solid #444;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .section p, .section ul {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .section ul {
+            padding-left: 20px;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .scary-background {
+            background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
+            background-repeat: repeat;
+            background-size: 100% 100%;
+        }
+
+        @keyframes glitch {
+            0% { text-shadow: 2px 2px 0 #ff0033, -2px -2px 0 #00ff00; }
+            50% { text-shadow: 3px 3px 0 #ff0033, -3px -3px 0 #00ff00; }
+            100% { text-shadow: 2px 2px 0 #ff0033, -2px -2px 0 #00ff00; }
+        }
+
+        .glitch-text {
+            animation: glitch 1s infinite;
+            color: #ff3333;
+        }
+
+        .soundcloud-embed iframe {
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        .broken-link {
+            color: #ff0000;
+            font-size: 1.5em;
+            animation: glitch 1s infinite alternate;
+        }
+
+        .scary-sound {
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+        }
+
+        .rain-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -2;
+        }
+
+        .raindrop {
+            position: absolute;
+            width: 2px;
+            height: 10px;
+            background: rgba(255, 255, 255, 1);
+            opacity: 1;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100%);
+                opacity: 1;
+            }
+            80% {
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container scary-background">
+        <div class="bg-overlay"></div>
+        <h1 class="dark-web-effect glitch-text">Thea Jo An Valenzona</h1>
+        <h1 class="dark-web-effect glitch-text">DOXBIN</h1>
+        <p><span class="highlight">Reason of Dox:</span> Grooming, Texting Minors, Cheating, Manipulator, E-whore</p>
+
+        <div class="section">
+            <h2>Personal Information</h2>
+            <p><span class="highlight">Location:</span> Bel-air Village, Makati, Metro Manila</p>
+            <p><span class="highlight">Birthday:</span> 11/12/2006 (not sure)</p>
+        </div>
+
+        <div class="section">
+            <h2>Social Links</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/theabella26" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/_jvalenzona/" target="_blank">1st Instagram</a></li>
+                <li><a href="https://www.instagram.com/klyn.ms/" target="_blank">2nd Instagram</a></li>
+                <li><a href="https://www.threads.net/@_jvalenzona?hl=en" target="_blank">Threads</a></li>
+                <li><a href="https://www.tiktok.com/@_jvalenzona?lang=en" target="_blank">1st TikTok</a></li>
+                <li><a href="https://www.tiktok.com/@_theabella?lang=en" target="_blank">2nd TikTok</a></li>
+                <li><a href="https://www.tiktok.com/@theabella02?lang=en" target="_blank">3rd TikTok (could be fake)</a></li>
+                <li><a href="https://www.roblox.com/users/3348790321/profile" target="_blank">1st Roblox</a></li>
+                <li><a href="https://www.roblox.com/users/3767451968/profile" target="_blank">2nd Roblox</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Discord</h2>
+            <ul>
+                <li><span class="highlight">1st Discord:</span> bke.01 (1324043697460875304)</li>
+                <li><span class="highlight">2nd Discord:</span> 119.mu (1278969850651217920)</li>
+            </ul>
+            <p><span class="highlight">Server mostly active on:</span> <a href="https://discord.gg/thecamp" target="_blank">discord.gg/thecamp</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Other Information</h2>
+            <p><span class="highlight">Currently in relationship with:</span> <a href="https://www.instagram.com/tapn_exclvs/" target="_blank">Instagram Profile</a> (15 years old, born 02/12/2009)</p>
+            <p><span class="highlight">Dating since:</span> November 2024</p>
+
+            <h3>"The Idol Clinic"</h3>
+            <p><span class="highlight">Business Locations:</span></p>
+            <ul>
+                <li>1st Branch: KM 12 Access Road, Balagbag, Brgy 201, Pasay City (Landmark: 711 Merville)</li>
+                <li>2nd Branch: Plaza dela Rosa, Bagong Tanyag, Mañalac Avenue, Taguig City (Landmark: Waltermart Bicutan)</li>
+            </ul>
+            <p><span class="highlight">Business Link:</span> <a href="https://www.facebook.com/profile.php?id=61552494392687" target="_blank">Facebook Profile</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Evidence</h2>
+            <img src="https://i.imgur.com/rQqsuwC.png" alt="Evidence Image" style="max-width:100%; border: 2px solid #444; border-radius: 10px; box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);">
+            <img src="https://i.imgur.com/mcdOYqn.png" alt="Evidence Image" style="max-width:100%; border: 2px solid #444; border-radius: 10px; box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);">
+            <img src="https://i.imgur.com/9ImDoTx.png" alt="Evidence Image" style="max-width:100%; border: 2px solid #444; border-radius: 10px; box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);">
+            <img src="https://i.imgur.com/4XkViwi.png" alt="Evidence Image" style="max-width:100%; border: 2px solid #444; border-radius: 10px; box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);">
+            <img src="https://i.imgur.com/4PtCyox.png" alt="Evidence Image" style="max-width:100%; border: 2px solid #444; border-radius: 10px; box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);">
+            <img src="https://i.imgur.com/KXVzmlj.png" alt="Evidence Image" style="max-width:100%; border: 2px solid #444; border-radius: 10px; box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);">
+        </div>
+
+        <div class="section soundcloud-embed">
+            <h2>Background Music</h2>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1647991059&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true&mute=true"></iframe>
+        </div>
+
+        <div class="scary-sound"></div>
+    </div>
+
+    <div class="rain-container" id="rain-container"></div>
+
+    <script>
+        const rainContainer = document.getElementById('rain-container');
+
+        function createRaindrop() {
+            const raindrop = document.createElement('div');
+            const size = Math.random() * 3 + 2;
+            const positionX = Math.random() * window.innerWidth;
+            const duration = Math.random() * 2 + 3;
+            const color = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+
+            raindrop.classList.add('raindrop');
+            raindrop.style.width = `${size}px`;
+            raindrop.style.height = `${size * 4}px`;
+            raindrop.style.left = `${positionX}px`;
+            raindrop.style.animationDuration = `${duration}s`;
+            raindrop.style.background = color;
+
+            rainContainer.appendChild(raindrop);
+
+            setTimeout(() => {
+                rainContainer.removeChild(raindrop);
+            }, duration * 1000);
+        }
+
+        setInterval(createRaindrop, 50);
+    </script>
+</body>
+</html>
